@@ -1,0 +1,43 @@
+@charset "utf-8";
+.form-wrapper {
+float:left;
+width: 800px;
+padding: 8px;
+margin: 15px auto;
+border-width: 1px;
+border-radius: 10px;
+background-color: #f6f6f6;}
+.form-wrapper #search {
+width: 650px;
+height: 20px;
+padding: 10px 5px;
+float: left;
+font: bold 16px 'lucida sans', 'trebuchet MS', 'Tahoma';
+border: 1px solid #ccc;
+border-radius: 3px;}
+ 
+.form-wrapper #search:focus {
+outline: 0;
+border-color: #aaa;
+}
+.form-wrapper #submit {
+float: right;
+border: 1px solid #00748f;
+height: 42px;
+width: 100px;
+padding: 0;
+cursor: pointer;
+font: bold 15px Arial, Helvetica;
+color: #fafafa;
+text-transform: uppercase;
+background-color: #0483a0;
+border-radius: 3px;
+text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);}
+.form-wrapper #submit:hover, .form-wrapper #submit:focus {
+background-color: #31b2c3;;
+background-image: linear-gradient(top, #0483a0, #31b2c3);}
+.form-wrapper #submit:active {
+outline: 0;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;}
+/* CSS Document */
+

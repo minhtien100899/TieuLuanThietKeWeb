@@ -1,0 +1,222 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/timkiem.css">
+<link rel="stylesheet" type="text/css" href="css/slider.css">
+<link rel="stylesheet" type="text/css" href="css/dangnhap.css">
+<link rel="stylesheet" type="text/css" href="css/dangky.css">
+<link rel="shortcut icon" type="image/x-icon" href="icon/Wwalczyszyn-Iwindows-Music-Library.ico" />
+<meta charset="utf-8">
+<meta name="author" content="Script Tutorials" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>NMT Music | Nghe nhạc chất lượng</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<header>
+    <div id="logo">
+    <a href="index.html"><img src="images/logo.png" width="189" height="89"/></a>
+    </div>
+    <form class="form-wrapper">
+	<input id="search" type="text" placeholder="Nhập tên ca sĩ,bài hát ,..." />
+	<input id="submit" type="submit" value="Tìm Kiếm" />
+	</form>
+    <div id="dangnhapvadangky">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng nhập</button>
+	<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Đăng ký</button>
+<div id="id02" class="modal1">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">X</span>
+  <form class="modal-content1" action="/action_page.php">
+    <div class="container1">
+      <h1>Đăng ký</h1>
+      <p>Điền thông tin tài khoản.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Nhớ mật khẩu
+      </label>
+
+      <p>Chấp thuận điều khoản<a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Đóng</button>
+        <button type="submit" class="signup">Đăng ký</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label for="uname"><b>Mật khẩu</b></label>
+      <input type="text" placeholder="Nhập tài khoản" name="uname" required>
+
+      <label for="psw"><b>Tài khoản</b></label>
+      <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+        
+      <button type="submit">Đăng nhập</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+      </label>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </div>
+    </header>
+    <nav>
+    <div id="menu">
+    <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="#">Chủ đề </a> </li>
+        <li><a href="#">Xếp hạng</a> </li>
+        <li><a href="nghesi.html">Nghệ sĩ</a> </li>
+        <li><a href="baihat.html">Bài hát</a> </li>
+        <li><a href="#">Album</a> </li>
+    </ul>
+    </div>
+    <div class="slider">
+    <input type="radio" name="slide_switch" id="id1" checked="checked"/>
+    <label for="id1">
+        <img src="images/hinhbacphan.jpg" width="100"/>
+    </label>
+    <img src="images/hinhbacphan.jpg"/>
+    <input type="radio" name="slide_switch" id="id2" />
+    <label for="id2">
+        <img src="images/hinhanhoiolai.jpg" width="100"/>
+    </label>
+    <img src="images/hinhanhoiolai.jpg"/>
+ 
+    <input type="radio" name="slide_switch" id="id3"/>
+    <label for="id3">
+        <img src="images/hinhanhodayma.jpg" width="100"/>
+    </label>
+    <img src="images/hinhanhodayma.jpg"/>
+ 
+    <input type="radio" name="slide_switch" id="id4"/>
+    <label for="id4">
+        <img src="images/hinhanhnhaodauthe.jpg" width="100"/>
+    </label>
+    <img src="images/hinhanhnhaodauthe.jpg"/>
+ 
+    <input type="radio" name="slide_switch" id="id5"/>
+    <label for="id5">
+        <img src="images/hinhcamgiaclucayserasao.jpg" width="100"/>
+    </label>
+    <img src="images/hinhcamgiaclucayserasao.jpg"/>
+    <input type="radio" name="slide_switch" id="id6"/>
+    <label for="id6">
+        <img src="images/hinhcuoinhaudi.jpg" width="100"/>
+    </label>
+    <img src="images/hinhcuoinhaudi.jpg"/>
+    <input type="radio" name="slide_switch" id="id7"/>
+    <label for="id7">
+        <img src="images/hinhxinmotlanngoaile.jpg" width="100"/>
+    </label>
+    <img src="images/hinhxinmotlanngoaile.jpg"/>
+
+</div>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Lên đầu trang">Lên đầu trang</button>
+    <script>
+// Lan chuot 20 px hien button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Khi click nut button thi chay len dau trang
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- InstanceBeginEditable name="NoidungChinhsua" --> 
+    <article>
+        	<section>
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/ZuqCOvwczX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	</section>
+
+<!-- InstanceEndEditable -->
+<aside id="right">
+        <p align="center"><a class="bangxephangtext" href="#">Bảng xếp hạng</a></p>
+        <div id="bangxephang">
+        <ul>
+        	<li>
+            <div id="numberbxh">1.</div><img src="images/bacphan.jpg"><a href="bacphan.html">Bạc Phận
+
+</a>
+            </li>
+            <li>
+            <div id="numberbxh">2.</div><img src="images/anhoiolai.jpg"><a href="anhoiolai.html">Anh Ơi Ở Lại
+
+</a>
+            </li>
+            <li>
+            <div id="numberbxh">3.</div><img src="images/anhodayma.jpg"><a href="anhodayma.html">Anh Ở Đây Mà
+</a>
+            </li>
+            <li>
+            <div id="numberbxh">4.</div><img src="images/anhnhaodauthe.jpg"><a href="anhnhaodauthe.html"> Anh Nhà Ở Đâu Thế
+</a>
+            </li>
+            <li>
+            <div id="numberbxh">5.</div><img src="images/camgiaclucayserasao.jpg" ><a href="camgiaclucayserasao.html">Cảm Giác Lúc Ấy Sẽ Ra Sao
+</a>
+            </li>
+            <li>
+            <div id="numberbxh">6.</div><img src="images/cuoinhaudi.jpg" ><a href="cuoinhaudi.html">Cưới Nhau Đi
+</a>
+            </li>
+            
+            <li>
+            <div id="numberbxh">7.</div><img src="images/xinmotlanngoaile.jpg" ><a href="xinmotlanngoaile.html">Xin Một Lần Ngoại Lệ
+</a>
+            </li>
+        
+        </ul>
+        </div>
+        </aside>
+    </article>
+</body>
+<footer style="background:#666">
+	<div id="footerMenu" align="center"> <a href="#">LIÊN HỆ</a><a href="#">QUẢNG CÁO </a> <a href="#">GÓP Ý</a></div>
+    <div class="rights">Website <a href="#">websitenghenhaccuanmt.com</a> được phát triển để làm bài tập Thiết kế Web</div>
+    <div class="rights">Thiết kế bởi <a href="#">NGUYỄN MINH TIẾN</a></div>
+</footer>
+<!-- InstanceEnd --></html>
